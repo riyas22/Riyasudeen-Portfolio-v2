@@ -9,8 +9,8 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Riyasudeen Farook | IT Operations Manager",
-  description: "Senior IT Operations Manager based in Riyadh, Saudi Arabia. Specializing in Nutanix HCI, Microsoft 365, and Enterprise Security Automation.",
+  title: "Riyasudeen Farook | IT Operations Manager | Vision 2030 Compliance | Riyadh",
+  description: "Strategic IT Operations Manager based in Riyadh. Specializing in Nutanix HCI, Microsoft 365, Operational Automation and NCA/NDMO cybersecurity compliance for Saudi enterprises.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -12,30 +12,30 @@ interface Project {
   isLarge?: boolean; // For span-2 logic
 }
 
-// Project Data
+// Project Data with "Challenge -> Solution -> Impact" descriptions
 const projects: Project[] = [
   {
     title: "Hybrid Cloud Transformation",
-    description: "Architected and deployed a high-availability Nutanix HCI cluster. Consolidated Windows Domain Controllers, SQL clusters, and critical business apps onto a unified platform, reducing hardware footprint by 40% while ensuring HA/DR readiness.",
+    description: "The Challenge: Legacy infrastructure lacked DR capabilities. The Solution: Architected a high-availability Nutanix HCI cluster consolidating Windows DCs and SQL. The Impact: Reduced hardware footprint by 40% while achieving 99.9% uptime and NCA compliance.",
     tags: ["Nutanix AHV", "Windows Server", "SQL Cluster"],
     icon: "fas fa-server",
     iconColor: "bg-blue-500/20",
     iconTextColor: "text-blue-400",
     isLarge: true,
-    // No link provided in original content, so arrow will be hidden
+    // No link provided, so arrow will be hidden
   },
   {
     title: "Security Automation Framework",
-    description: "Developed a self-healing security workflow using n8n. Automatically aggregates vulnerability data from Microsoft Defender and generates real-time reports, reducing incident triage time by 60%.",
+    description: "Addressed slow incident response times by building a self-healing workflow with n8n. Automatically aggregates Microsoft Defender vulnerabilities, reducing triage time by 60% and ensuring 24/7 threat monitoring.",
     tags: ["n8n", "Docker"],
     icon: "fas fa-robot",
     iconColor: "bg-yellow-500/20",
     iconTextColor: "text-yellow-400",
-    // REMOVED LINK HERE so arrow will not show
+    // REMOVED LINK HERE as requested, so arrow will not show
   },
   {
     title: "Enterprise Device Management",
-    description: "Led the migration to Microsoft Intune for 800+ endpoints. Enforced compliance policies, automated patch management, and secured remote access for a hybrid workforce.",
+    description: "Standardized 800+ endpoints using Microsoft Intune. Enforced strict compliance policies and automated patch management, securing the hybrid workforce against unpatched vulnerabilities.",
     tags: ["Intune", "Autopilot"],
     icon: "fab fa-windows",
     iconColor: "bg-blue-600/20",
@@ -43,7 +43,7 @@ const projects: Project[] = [
   },
   {
     title: "Zero-Trust Security Architecture",
-    description: "Overhauled the organizational security posture by implementing CrowdStrike EDR and Palo Alto Networks firewalls (Policy-Based Forwarding). Configured Nginx reverse proxies with strict SSL/TLS policies to protect internal applications.",
+    description: "Overhauled security posture to meet NDMO standards. Implemented CrowdStrike EDR and Palo Alto Policy-Based Forwarding, plus strict Nginx reverse proxies for internal apps.",
     tags: ["Palo Alto", "CrowdStrike", "Nginx"],
     icon: "fas fa-shield-virus",
     iconColor: "bg-red-500/20",
@@ -52,7 +52,7 @@ const projects: Project[] = [
   },
   {
     title: "Business Continuity (DRP)",
-    description: "Deployed Veeam Backup & Replication for 800+ users and virtual infrastructure. Implemented immutable backups to protect against ransomware, achieving an RPO of < 4 hours.",
+    description: "Eliminated data loss risk by deploying Veeam Backup & Replication with immutable storage. Achieved an RPO of < 4 hours for 800+ users, ensuring resilience against ransomware.",
     tags: ["Veeam", "Immutable Storage"],
     icon: "fas fa-hdd",
     iconColor: "bg-green-600/20",
@@ -60,7 +60,7 @@ const projects: Project[] = [
   },
   {
     title: "Enterprise Observability",
-    description: "Built a centralized logging and monitoring stack using Zabbix and OpenSearch. Provides granular visibility into 100+ hosts, enabling proactive issue resolution before user impact.",
+    description: "Moved from reactive to proactive monitoring using Zabbix and OpenSearch. Provides granular visibility into 100+ hosts, allowing the team to resolve issues before they impact business operations.",
     tags: ["Zabbix", "OpenSearch"],
     icon: "fas fa-eye",
     iconColor: "bg-orange-600/20",
@@ -68,7 +68,7 @@ const projects: Project[] = [
   },
   {
     title: "DevSecOps Platform",
-    description: "Established a containerized service platform for Nextcloud, OLLAMA (local AI), and internal apps. Streamlined deployment pipelines using Docker Compose and Portainer.",
+    description: "Modernized internal tooling by establishing a secure container platform for Nextcloud and local AI (OLLAMA). Streamlined deployment pipelines using Docker Compose and Portainer.",
     tags: ["Docker", "Portainer"],
     icon: "fab fa-docker",
     iconColor: "bg-cyan-600/20",
@@ -76,7 +76,7 @@ const projects: Project[] = [
   },
   {
     title: "AI-Enhanced Service Desk",
-    description: "Deployed Zammad ticketing system integrated with local AI models for sentiment analysis and automated routing. Handles 200+ tickets/month with improved resolution SLAs.",
+    description: "Reduced ticket resolution time by deploying Zammad with AI sentiment analysis. The system automates routing for 200+ monthly tickets, improving SLA adherence.",
     tags: ["Zammad", "AI"],
     icon: "fas fa-headset",
     iconColor: "bg-purple-600/20",

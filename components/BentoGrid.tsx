@@ -3,7 +3,7 @@ import ProfileCard from "./ProfileCard";
 import TechMarquee from "./TechMarquee";
 import ImpactMetrics from "./ImpactMetrics";
 import ProjectGrid from "./ProjectGrid";
-// Removed Footer import to prevent duplication
+import AboutMe from "./AboutMe";
 
 export default function BentoGrid() {
   return (
@@ -13,6 +13,7 @@ export default function BentoGrid() {
       <TechMarquee />
       <ImpactMetrics />
       <ProjectGrid />
+      <AboutMe />
     </div>
   );
 }
