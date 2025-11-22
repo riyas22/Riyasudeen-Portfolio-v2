@@ -25,8 +25,8 @@ export default function Navbar() {
             
             <div className="h-4 w-px bg-slate-700"></div>
 
-            <a href="https://linkedin.com" target="_blank" className="text-textMuted hover:text-[#0077b5] transition transform hover:scale-110"><i className="fab fa-linkedin fa-lg"></i></a>
-            <a href="https://github.com" target="_blank" className="text-textMuted hover:text-white transition transform hover:scale-110"><i className="fab fa-github fa-lg"></i></a>
+            <a href="https://linkedin.com/in/riyasudeen-p-m/" target="_blank" className="text-textMuted hover:text-[#0077b5] transition transform hover:scale-110"><i className="fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/riyas22" target="_blank" className="text-textMuted hover:text-white transition transform hover:scale-110"><i className="fab fa-github fa-lg"></i></a>
             <a href="mailto:uriyas22@gmail.com" className="bg-white/10 hover:bg-accent hover:text-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium transition duration-300 border border-white/5">
               Email Me
             </a>
