@@ -50,10 +50,10 @@ export default function Navbar() {
               <span className="px-3 py-1 text-textMuted text-xs">Ar</span>
             </div>
           </div>
-          <a href="https://linkedin.com" target="_blank" className="flex items-center gap-3 text-textMuted hover:text-white p-2">
+          <a href="https://www.linkedin.com/in/riyasudeen-p-m/" target="_blank" className="flex items-center gap-3 text-textMuted hover:text-white p-2">
             <i className="fab fa-linkedin fa-lg w-6"></i> LinkedIn Profile
           </a>
-          <a href="https://github.com" target="_blank" className="flex items-center gap-3 text-textMuted hover:text-white p-2">
+          <a href="https://github.com/riyas22" target="_blank" className="flex items-center gap-3 text-textMuted hover:text-white p-2">
             <i className="fab fa-github fa-lg w-6"></i> GitHub Profile
           </a>
           <a href="mailto:uriyas22@gmail.com" className="block text-center w-full bg-accent text-slate-900 font-bold py-3 rounded-lg mt-2">

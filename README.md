@@ -5,35 +5,37 @@ A modern, high-performance portfolio website built with Next.js 15, Tailwind CSS
 (Note: Add a screenshot of your site to the public folder and name it screenshot.png to see it here)
 
 🚀 Features
-1. Bento Grid Layout: A responsive, modular grid design popular in modern SaaS and dev portfolios.
-2. Tech Stack Marquee: An infinite scrolling animation showcasing technical skills.3. Glassmorphism UI: Modern frosted glass effects using Tailwind's backdrop-blur utilities.
-4. Mobile Responsive: Fully optimized layout that switches from a complex grid to a clean vertical stack on mobile devices.
-5. Dark Mode Native: Built with a developer-centric dark theme (Slate-900/Slate-800).Downloadable CV: Direct asset download functionality.
+- Bento Grid Layout: A responsive, modular grid design popular in modern SaaS and dev portfolios.
+- Tech Stack Marquee: An infinite scrolling animation showcasing technical skills.
+- Glassmorphism UI: Modern frosted glass effects using Tailwind's backdrop-blur utilities.
+- Mobile Responsive: Fully optimized layout that switches from a complex grid to a clean vertical stack on mobile devices.
+- Dark Mode Native: Built with a developer-centric dark theme (Slate-900/Slate-800).Downloadable CV: Direct asset download functionality.
 
 🛠️ Tech Stack
-1. Framework: Next.js 15 (App Router)
-2. Styling: Tailwind CSS 3.4
-3. Language: TypeScript
-4. Icons: FontAwesome 6 (via CDN)
-5. Deployment: Vercel
+- Framework: Next.js 15 (App Router)
+- Styling: Tailwind CSS 3.4
+- Language: TypeScript
+- Icons: FontAwesome 6 (via CDN)
+- Deployment: Vercel
 
-📂 Project Structure├── app/
-│   ├── globals.css      # Global styles, Marquee animations, and Grid utilities
-│   ├── layout.tsx       # Root layout (Fonts, Icons, Metadata)
-│   └── page.tsx         # Main entry point
-├── components/
-│   ├── Navbar.tsx       # Sticky header with mobile menu logic
-│   ├── BentoGrid.tsx    # Main layout wrapper
-│   ├── Hero.tsx         # Intro section & CV download
-│   ├── ProfileCard.tsx  # Photo & Role display
-│   ├── TechMarquee.tsx  # Infinite scroll skills list
-│   ├── ImpactMetrics.tsx# KPI cards (Uptime, etc.)
-│   ├── ProjectGrid.tsx  # Detailed project showcase
-│   └── Footer.tsx       # Contact & Copyright
-├── public/
-│   ├── profile.jpg      # Personal headshot
-│   └── cv.pdf           # Resume file
-└── tailwind.config.ts   # Theme customization
+📂 Project Structure
+- ├── app/
+- │   ├── globals.css      # Global styles, Marquee animations, and Grid utilities
+- │   ├── layout.tsx       # Root layout (Fonts, Icons, Metadata)
+- │   └── page.tsx         # Main entry point
+- ├── components/
+- │   ├── Navbar.tsx       # Sticky header with mobile menu logic
+- │   ├── BentoGrid.tsx    # Main layout wrapper
+- │   ├── Hero.tsx         # Intro section & CV download
+- │   ├── ProfileCard.tsx  # Photo & Role display
+- │   ├── TechMarquee.tsx  # Infinite scroll skills list
+- │   ├── ImpactMetrics.tsx# KPI cards (Uptime, etc.)
+- │   ├── ProjectGrid.tsx  # Detailed project showcase
+- │   └── Footer.tsx       # Contact & Copyright
+- ├── public/
+- │   ├── profile.jpg      # Personal headshot
+- │   └── cv.pdf           # Resume file
+- └── tailwind.config.ts   # Theme customization
 
 ⚡ Getting Started
 Clone the repository:
