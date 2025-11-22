@@ -5,17 +5,17 @@ A modern, high-performance portfolio website built with Next.js 15, Tailwind CSS
 (Note: Add a screenshot of your site to the public folder and name it screenshot.png to see it here)
 
 🚀 Features
-Bento Grid Layout: A responsive, modular grid design popular in modern SaaS and dev portfolios.
-Tech Stack Marquee: An infinite scrolling animation showcasing technical skills.Glassmorphism UI: Modern frosted glass effects using Tailwind's backdrop-blur utilities.
-Mobile Responsive: Fully optimized layout that switches from a complex grid to a clean vertical stack on mobile devices.
-Dark Mode Native: Built with a developer-centric dark theme (Slate-900/Slate-800).Downloadable CV: Direct asset download functionality.
+1. Bento Grid Layout: A responsive, modular grid design popular in modern SaaS and dev portfolios.
+2. Tech Stack Marquee: An infinite scrolling animation showcasing technical skills.3. Glassmorphism UI: Modern frosted glass effects using Tailwind's backdrop-blur utilities.
+4. Mobile Responsive: Fully optimized layout that switches from a complex grid to a clean vertical stack on mobile devices.
+5. Dark Mode Native: Built with a developer-centric dark theme (Slate-900/Slate-800).Downloadable CV: Direct asset download functionality.
 
 🛠️ Tech Stack
-Framework: Next.js 15 (App Router)
-Styling: Tailwind CSS 3.4
-Language: TypeScript
-Icons: FontAwesome 6 (via CDN)
-Deployment: Vercel
+1. Framework: Next.js 15 (App Router)
+2. Styling: Tailwind CSS 3.4
+3. Language: TypeScript
+4. Icons: FontAwesome 6 (via CDN)
+5. Deployment: Vercel
 
 📂 Project Structure├── app/
 │   ├── globals.css      # Global styles, Marquee animations, and Grid utilities
@@ -38,13 +38,13 @@ Deployment: Vercel
 ⚡ Getting Started
 Clone the repository:
 
-git clone [https://github.com/riyas22/riyasudeen-portfolio-v2.git](https://github.com/riyas22/riyasudeen-portfolio-v2.git)
-cd riyasudeen-portfolio-v2
-Install dependencies:
-npm install
-Run the development server:
-npm run dev
-View locally:Open http://localhost:3000 in your browser.
+1. git clone [https://github.com/riyas22/riyasudeen-portfolio-v2.git](https://github.com/riyas22/riyasudeen-portfolio-v2.git)
+2. cd riyasudeen-portfolio-v2
+3. Install dependencies:
+    npm install
+4. Run the development server:
+    npm run dev
+5. View locally:Open http://localhost:3000 in your browser.
 
 📱 Mobile Testing (Local Network)
 To view the site on your phone while developing:
@@ -53,12 +53,12 @@ To view the site on your phone while developing:
 3. Visit http://YOUR_IP_ADDRESS:3000 on your phone.
 
 🚢 Deployment
-This project is optimized for Vercel.
-Push your code to GitHub.
-Import the repository in Vercel.
-The build settings are pre-configured (Framework: Next.js).
-Click Deploy.
+- This project is optimized for Vercel.
+- Push your code to GitHub.
+- Import the repository in Vercel.
+- The build settings are pre-configured (Framework: Next.js).
+- Click Deploy.
 
 📄 License
-This project is open source and available under the MIT License.
-© 2025 Riyasudeen Farook. All rights reserved.
+- This project is open source and available under the MIT License.
+- © 2025 Riyasudeen Farook. All rights reserved.
