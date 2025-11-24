@@ -3,12 +3,16 @@
 @theme {
   --font-sans: 'Inter', sans-serif;
   
-  --color-primary: #0f172a;
-  --color-secondary: #1e293b;
-  --color-accent: #38bdf8;
-  --color-text-main: #f8fafc;
-  --color-text-muted: #94a3b8;
+  /* Define CSS variables for theme colors */
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-card-bg: var(--card-bg);
+  --color-border: var(--border);
 
+  /* Define the marquee animation */
   --animate-marquee: marquee 40s linear infinite;
 
   @keyframes marquee {
@@ -17,11 +21,41 @@
   }
 }
 
+/* === THEME VARIABLES === */
+:root {
+  /* === Dark Mode (Default) - "Cyber/Executive" === */
+  --primary: #0f172a;      /* Slate 900 */
+  --secondary: #1e293b;    /* Slate 800 */
+  --accent: #38bdf8;       /* Sky 400 */
+  --text-main: #f8fafc;    /* Slate 50 */
+  --text-muted: #94a3b8;   /* Slate 400 */
+  
+  /* Glass effect for dark mode */
+  --card-bg: rgba(30, 41, 59, 0.6); 
+  --border: rgba(255, 255, 255, 0.05);
+  --grid-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] {
+  /* === Light Mode - "Clean/Corporate" === */
+  --primary: #f0f4f8;      /* Very light blue-gray (not stark white) */
+  --secondary: #ffffff;    /* Pure white for elements */
+  --accent: #0284c7;       /* Sky 600 (Darker blue for contrast) */
+  --text-main: #0f172a;    /* Slate 900 (Dark text) */
+  --text-muted: #475569;   /* Slate 600 (Readable gray) */
+  
+  /* Solid/Clean effect for light mode (Glass looks bad on light) */
+  --card-bg: rgba(255, 255, 255, 0.85); 
+  --border: rgba(203, 213, 225, 0.6); /* Slate 300 */
+  --grid-color: rgba(148, 163, 184, 0.1); /* Slate 400 with opacity */
+}
+
 /* === Base Styles === */
 html, body {
-  background-color: var(--color-primary);
-  color: var(--color-text-main);
+  background-color: var(--primary);
+  color: var(--text-main);
   font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* === Utility Classes === */
@@ -40,6 +74,7 @@ html, body {
   .bento-grid {
     display: grid; /* Grid for desktop */
     grid-template-columns: repeat(3, 1fr);
+    /* Use auto rows so content like the marquee can be slim */
     grid-auto-rows: auto; 
   }
   .col-span-2 { grid-column: span 2; }
@@ -49,8 +84,8 @@ html, body {
 
 /* Glassmorphic Card Style */
 .bento-card {
-  background-color: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 1.5rem;
   padding: 2rem;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -59,7 +94,8 @@ html, body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* No forced min-height here to allow slim cards like marquee */
+  /* Add shadow in light mode for depth */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
 }
 
 @media (min-width: 768px) {
@@ -70,9 +106,9 @@ html, body {
 
 .bento-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(56, 189, 248, 0.3);
-  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(30, 41, 59, 0.8);
+  border-color: var(--accent);
+  /* Stronger shadow on hover */
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 /* === MARQUEE ANIMATION === */
@@ -80,12 +116,13 @@ html, body {
   overflow: hidden;
   white-space: nowrap;
   position: relative;
+  /* Use CSS variables/gradients for the fade mask */
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
 }
 
 .marquee-content {
-  display: flex;
-  width: max-content;
+  display: flex;          /* Ensures horizontal layout */
+  width: max-content;     /* Ensures container expands to fit all items */
   animation: var(--animate-marquee);
 }
 
@@ -97,13 +134,13 @@ html, body {
 .bg-grid {
   background-size: 60px 60px;
   background-image: 
-    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-color) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-color) 1px, transparent 1px);
   mask-image: radial-gradient(circle at center, black 40%, transparent 100%);
 }
 
 /* Custom Scrollbar */
 ::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background-color: #020617; }
-::-webkit-scrollbar-thumb { background-color: #334155; border-radius: 4px; }
-::-webkit-scrollbar-thumb:hover { background-color: #475569; }
+::-webkit-scrollbar-track { background-color: var(--primary); }
+::-webkit-scrollbar-thumb { background-color: var(--secondary); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background-color: var(--text-muted); }
