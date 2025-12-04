@@ -10,6 +10,7 @@ import Script from "next/script";
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
+  metadataBase: new URL('https://riyasudeen.me'),
   title: "Riyasudeen Farook | IT Operations Manager | Vision 2030 Compliance | Riyadh | Saudi Arabia",
   description: "Strategic IT Operations Manager based in Riyadh. Specializing in Nutanix HCI, Microsoft 365, Virtualization and NCA/NDMO cybersecurity compliance for Saudi enterprises.",
   keywords: ["IT Operations Manager Riyadh", "Nutanix HCI", "Saudi Vision 2030", "NCA compliance", "Intune MDM", "CrowdStrike", "Palo Alto", "n8n automation", "VMWare Infrastructure", "Veeam Backup & Disaster Recovery"],
