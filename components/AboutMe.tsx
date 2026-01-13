@@ -22,17 +22,20 @@ export default function AboutMe() {
         <div>
           <h3 className="text-lg font-semibold text-white mb-3">Leadership Journey</h3>
           <p className="text-textMuted text-sm leading-relaxed mb-4">
-            With extensive experience leading <strong>Infrastructure, Systems, and Helpdesk teams</strong>, I bridge the gap between complex engineering challenges and executive business goals.
+            With extensive experience managing <strong>SAR 10M+ IT budgets and leading cross-functional teams</strong>, I bridge the gap between complex engineering challenges and executive business goals.
           </p>
           <div className="flex flex-wrap gap-2 mt-4">
              <span className="px-3 py-1 text-xs font-medium bg-slate-800 rounded-full border border-white/10 text-slate-300">
-               <i className="fas fa-users mr-2 text-accent"></i> Team Building
+               <i className="fas fa-users mr-2 text-accent"></i> IT Strategy & Governance
              </span>
              <span className="px-3 py-1 text-xs font-medium bg-slate-800 rounded-full border border-white/10 text-slate-300">
                <i className="fas fa-handshake mr-2 text-accent"></i> Vendor Management
              </span>
              <span className="px-3 py-1 text-xs font-medium bg-slate-800 rounded-full border border-white/10 text-slate-300">
                <i className="fas fa-chart-line mr-2 text-accent"></i> Budgeting & ROI
+             </span>
+             <span className="px-3 py-1 text-xs font-medium bg-slate-800 rounded-full border border-white/10 text-slate-300">
+               <i className="fas fa-users mr-2 text-accent"></i> Team Building
              </span>
           </div>
         </div>

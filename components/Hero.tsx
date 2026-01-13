@@ -7,7 +7,7 @@ export default function Hero() {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
           </span>
-          Based in Riyadh, KSA 🇸🇦
+          Based in Riyadh, KSA 🇸🇦 (Transferable Iqama | SCE Approved Computer Engineer)
         </span>
       </div>
       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight">

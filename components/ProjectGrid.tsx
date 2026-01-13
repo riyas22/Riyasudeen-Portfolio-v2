@@ -16,7 +16,9 @@ interface Project {
 const projects: Project[] = [
   {
     title: "Hybrid Cloud Transformation",
-    description: "The Challenge: Legacy infrastructure lacked DR capabilities. The Solution: Architected a high-availability Nutanix HCI cluster consolidating Windows DCs and SQL. The Impact: Reduced hardware footprint by 40% while achieving 99.9% uptime and NCA compliance.",
+    description: `The Challenge: Legacy infrastructure lacked DR capabilities.
+                  The Solution: Architected a high-availability Nutanix HCI cluster consolidating Windows DCs and SQL.
+                  The Impact: Reduced hardware footprint by 40% and eliminated hypervisor licensing costs, ensuring 99.9% uptime and NCA compliance.`,
     tags: ["Nutanix AHV", "Windows Server", "SQL Cluster"],
     icon: "fas fa-server",
     iconColor: "bg-blue-500/20",
@@ -53,7 +55,7 @@ const projects: Project[] = [
   {
     title: "Business Continuity (DRP)",
     description: "Eliminated data loss risk by deploying Veeam Backup & Replication with immutable storage. Achieved an RPO of < 4 hours for 800+ users, ensuring resilience against ransomware.",
-    tags: ["Veeam", "Immutable Storage"],
+    tags: ["Veeam", "Immutable Storage", "Disaster Recovery"],
     icon: "fas fa-hdd",
     iconColor: "bg-green-600/20",
     iconTextColor: "text-green-400",
@@ -102,8 +104,14 @@ export default function ProjectGrid() {
           }`}
         >
           <div className="flex justify-between items-start mb-4">
-            <div className={`p-2 rounded-lg ${project.iconColor} ${project.iconTextColor}`}>
-              <i className={`${project.icon} fa-lg`}></i>
+            <div className="flex items-baseline gap-4">
+              <div className={`p-2 rounded-lg ${project.iconColor} ${project.iconTextColor} flex items-center justify-center`}>
+                <i className={`${project.icon} fa-lg`}></i>
+              </div>
+
+              <h3 className="text-xl font-bold text-white mb-0 group-hover:text-accent transition">
+                {project.title}
+              </h3>
             </div>
             
             {/* Conditionally render the arrow icon ONLY if a link exists */}
@@ -120,11 +128,7 @@ export default function ProjectGrid() {
             )}
           </div>
           
-          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent transition">
-            {project.title}
-          </h3>
-          
-          <p className="text-textMuted text-sm mb-6 flex-grow leading-relaxed">
+          <p className="text-textMuted text-sm mb-6 flex-grow leading-relaxed whitespace-pre-line">
             {project.description}
           </p>
           

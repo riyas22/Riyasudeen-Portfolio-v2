@@ -31,7 +31,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-white/5 pt-6 flex justify-center items-center text-xs text-slate-500"> {/* Centered content */}
-          <p>&copy; 2025 Riyasudeen Farook. All rights reserved.</p>
+          <p>&copy; 2026 Riyasudeen Farook. All rights reserved.</p>
         </div>
       </div>
     </footer>
